@@ -93,20 +93,44 @@
 			<section class="consultation">
 				<div class="container">
 					<div class="consultation__body">
-						<h2 class="consultation__title title">
-							Получите бесплатную консультацию по подбору пульсометра
+						<h2 class="consultation__title">
+							Получите бесплатную консультацию <br />
+							по подбору пульсометра
 						</h2>
 						<div class="consultation__text">
-							Просто заполните форму заявки и мы перезвоним вам в течении 10
-							минут
+							Просто заполните форму заявки <br />
+							и мы перезвоним вам в течении 10 минут
 						</div>
-						<form action="" class="consultation__form order-form">
-							<input tabindex="1" type="text" class="order-form__input" />
-							<input tabindex="2" type="text" class="order-form__input" />
-							<input tabindex="3" type="text" class="order-form__input" />
-							<button class="order-form__btn btn" type="submit">
-								заказать кОНСУЛЬТАЦИЮ
-							</button>
+						<form action="#" class="consultation__form order-form">
+							<div class="order-form__row">
+								<input
+									tabindex="1"
+									required
+									type="text"
+									class="order-form__input"
+									placeholder="Ваше имя"
+									name="userName"
+								/>
+								<input
+									tabindex="2"
+									required
+									type="tel"
+									class="order-form__input"
+									placeholder="Ваш телефон"
+									name="userPhone"
+								/>
+								<input
+									tabindex="3"
+									required
+									type="email"
+									class="order-form__input"
+									placeholder="Ваш E-mail"
+									name="userEmail"
+								/>
+								<button class="order-form__btn btn btn_big" type="submit">
+									заказать кОНСУЛЬТАЦИЮ
+								</button>
+							</div>
 						</form>
 					</div>
 				</div>
