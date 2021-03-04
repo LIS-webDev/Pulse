@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('.carousel__inner').slick({
         infinite: true,
@@ -26,10 +28,6 @@ $(document).ready(function () {
 
     });
 
-
-
-
-
     function toggleSlide(item) {
         $(item).each(function (i) {
             $(this).on('click', function (e) {
@@ -42,4 +40,24 @@ $(document).ready(function () {
 
     toggleSlide('.catalog-item__back');
     toggleSlide('.catalog-item__link');
+
+
+    // Modal
+
+    $('[data-modal=consultation]').on('click', () => {
+        $('.overlay, #consultation').fadeIn('slow');
+    })
+
+    $('.modal__close').on('click', () => {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    })
+
+
+    $('.btn_min').each(function (i) {
+        $(this).on('click', () => {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+            console.log(i);
+        })
+    })
 });
