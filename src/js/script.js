@@ -60,4 +60,40 @@ $(document).ready(function () {
             console.log(i);
         })
     })
+
+
+    // Validate form
+
+    function validateForm(form) {
+        $(form).each(function () {
+            $(this).validate({
+                rules: {
+                    userName: {
+                        required: true,
+                        minlength: 2
+                    },
+                    userPhone: "required",
+                    userEmail: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    userName: {
+                        required: "Пожалуйста, введите свое имя",
+                        minlength: jQuery.validator.format("Введите минимум {0} символа!")
+                    },
+                    userPhone: "Пожалуйста, введите свой телефон",
+                    userEmail: {
+                        required: "Пожалуйста, введите свою почту",
+                        email: "Неправильно введен адрес почты"
+                    }
+                }
+            });
+        });
+    }
+
+    validateForm('#consultation-form');
+    validateForm('#consultation form');
+    validateForm('#order form');
 });
