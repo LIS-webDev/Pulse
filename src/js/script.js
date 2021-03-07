@@ -91,7 +91,7 @@ $(document).ready(function () {
                 }
             });
         });
-    }
+    };
 
     validateForm('#consultation-form');
     validateForm('#consultation form');
@@ -118,4 +118,28 @@ $(document).ready(function () {
         });
         return false;
     })
+
+
+    // Pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn('slow');
+        } else {
+            $('.pageup').fadeOut();
+        };
+    });
+
+    // Smooth scroll
+
+    $(function () {
+        $("a[href^='#']").click(function () {
+            var _href = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+            return false;
+        });
+    });
+
+
+
 });
