@@ -140,6 +140,7 @@ $(document).ready(function () {
         });
     });
 
-
+    // WOW.js
+    new WOW().init();
 
 });

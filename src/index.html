@@ -7,6 +7,7 @@
 		<title>RunSmart</title>
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body>
@@ -65,7 +66,11 @@
 					<h2 class="features__title title">НАШИ ПРЕИМУЩЕСТВА</h2>
 					<div class="features__row">
 						<div class="features__item">
-							<img src="icons/cup.png" alt="cup`" />
+							<img
+								src="icons/cup.png"
+								alt="cup"
+								class="features__icon features__icon_shake animate__animated animate__tada animate__slow animate__repeat-5"
+							/>
 							<div class="features__name">Делимся опытом</div>
 							<div class="features__descr">
 								Наши сотрудники всегда готовы поделиться своим опытом, так как
@@ -74,7 +79,11 @@
 							</div>
 						</div>
 						<div class="features__item">
-							<img src="icons/heart.png" alt="heart" />
+							<img
+								src="icons/heart.png"
+								alt="heart"
+								class="features__icon features__icon_beat animate__animated animate__repeat-5 animate__slow"
+							/>
 							<div class="features__name">Заботимся о здоровье</div>
 							<div class="features__descr">
 								Мы&nbsp;работаем для того, чтобы Ваши занятия спортом шли
@@ -83,7 +92,11 @@
 							</div>
 						</div>
 						<div class="features__item">
-							<img src="icons/shoe.png" alt="shoe" />
+							<img
+								src="icons/shoe.png"
+								alt="shoe"
+								class="features__icon features__icon_run animate__animated animate__rollOut animate__repeat-5"
+							/>
 							<div class="features__name">Учим бегать</div>
 							<div class="features__descr">
 								Помогаем с обучением правильной технике бега! Дружим с
@@ -596,7 +609,9 @@
 				<div class="container">
 					<h2 class="review__title title">отзывы клиентов</h2>
 					<div class="review__content">
-						<div class="review-item">
+						<div
+							class="review-item wow animate__animated animate__fadeInLeft animate__delay-0.8s"
+						>
 							<img
 								src="img/review_photo_1.png"
 								alt="client"
@@ -617,7 +632,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="review-item">
+						<div
+							class="review-item wow animate__animated animate__fadeInRight animate__delay-0.8s"
+						>
 							<img
 								src="img/review_photo_2.png"
 								alt="client"
@@ -639,7 +656,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="review-item">
+						<div
+							class="review-item wow animate__animated animate__fadeInLeft animate__delay-0.8s"
+						>
 							<img
 								src="img/review_photo_3.png"
 								alt="client"
@@ -789,6 +808,7 @@
 		<script src="js/jquery.maskedinput.min.js"></script>
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/slick.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
