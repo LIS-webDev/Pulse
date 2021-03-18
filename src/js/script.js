@@ -46,6 +46,8 @@ $(document).ready(function () {
 
     $('[data-modal=consultation]').on('click', () => {
         $('.overlay, #consultation').fadeIn('slow');
+        $('.pageup').fadeOut();
+        $('.wrapper').toggleClass('.lock');
     })
 
     $('.modal__close').on('click', () => {
